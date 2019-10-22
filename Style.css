@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 10000px;
+}
+
+.Dice {
+  width: 300px;
+}
