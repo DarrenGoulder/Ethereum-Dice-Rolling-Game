@@ -1,12 +1,127 @@
-* {
+body {
   margin: 0;
   padding: 0;
+  height: 100vh;
 }
-.wrapper {
+
+.title {
+  position:absolute;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 3.7em;
+  left: 0%;
+  transform: translate(-50, -50%);
+  margin: 0;
+  padding: 0;
+  font-fmaily: sans-serif;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+#particles-js
+
+{
+height: 100%;
+background: #f00;
+}
+
+.wrapper1 {
+  opacity:100;
+  padding:2em;
+  position:absolute;
+  top:0px;
+  left:20px;
   margin: 0 auto;
-  width: 10000px;
+  width: 1200px;
+}
+
+.wrapper2 {
+  opacity:8;
+  padding:2em;
+  float: left;
+  position:absolute;
+  opacity: 0.9;
+  top:170px;
+  left:50px;
+  margin: 0 auto;
+  width: 1100px;
+}
+
+.wrapper3 {
+  padding:2em;
+  background-color: white;
+  border:#ccc 2px solid;
+  position:absolute;
+  opacity: 0.8;
+  top:40px;
+  left:1320px;
+  margin: 0 auto;
+  width: 480px;
+}
+
+.wrapper4 {
+
+  float:left;
+}
+
+.wrapper5 {
+  padding:2em;
+  float:right;
+  right: 30px;
+
+}
+
+.ethLogo {
+  width:550px;
+  top:5px;
+  left:100px;
+}
+
+.credits {
+  width:150px;
+  top:5px;
+  left:10px;
 }
 
 .Dice {
-  width: 300px;
+  width: 500px;
+}
+
+.inputBet {
+    input[type=text]:focus
+    background-color: #8842d5;
+    font-size: 25px;
+    left: 10px;
+}
+
+.inputBetText {
+  font-size: 1.5em;
+
+}
+
+.result {
+  top:1px;
+  text-align: center;
+  font-size: 3em;
+   text-shadow: 2px 2px 4px #000000;
+}
+
+.buttonOne{
+  font-size: 29px;
+  background-color: #4CAF50;
+}
+
+.buttonOne:hover {
+
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.buttonTwo{
+  font-size: 29px;
+  background-color: #008CBA;
+}
+
+.buttonTwo:hover {
+
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }

@@ -3,20 +3,50 @@
   <head>
     <meta charset="utf-8">
     <title>Ethereum Dice Rolling Game</title>
-    <link rel="stylesheet" href="https://github.com/DarrenGoulder/Ethereum-Dice-Rolling-Game/blob/master/Style.css">
+    <link rel="stylesheet" href="Style.css">
   </head>
   <body>
-    <div class="wrapper">
-    <h1>Ethereum Dice Rolling Game</h1>
-    <img class = "Dice" src = "https://github.com/DarrenGoulder/Ethereum-Dice-Rolling-Game/blob/master/images/Black1.png?raw=true" alt="Die 1" id ="die1">
 
-    <img class = "Dice" src = "https://github.com/DarrenGoulder/Ethereum-Dice-Rolling-Game/blob/master/images/Red1.png?raw=true" alt="Die 2" id ="die2">
+<div id="particles-js"></script>
 
-    <button type="Button" id="rollButtonEven">Roll Even</button>
-    <button type="Button" id="rollButtonOdd">Roll Odd</button>
-    <h1 id ="result" </h1>
-    </div>
+      <div class="wrapper1">
 
+        <h1 class = "title" >Ethereum Dice Rolling Challenge</h1>
+
+      </div>
+
+        <div class="wrapper2">
+
+          <script type="text/javascript" src='particles.js'></script>
+          <script type="text/javascript" src="app.js"></script>
+          <img class = "Dice" src = "https://github.com/DarrenGoulder/Ethereum-Dice-Rolling-Game/blob/master/images/Black1.png?raw=true" alt="Die 1" id ="die1">
+
+          <img class = "Dice" src = "https://github.com/DarrenGoulder/Ethereum-Dice-Rolling-Game/blob/master/images/Red1.png?raw=true" alt="Die 2" id ="die2">
+
+          </div>
+
+          <div class="wrapper3">
+
+              <h1 id ="result" class = "result" >Enter Bet Details Below</h1>
+              <img class = "ethLogo" src = "https://github.com/DarrenGoulder/Ethereum-Dice-Rolling-Game/blob/master/images/ethereum-growing-exponentially-in-china-consensys-media-738504.png?raw=true" alt="Ethereum Dice Roll" id ="ethLogo">
+                <div class="wrapper4">
+                  <img class = "credits" src = "https://github.com/DarrenGoulder/Ethereum-Dice-Rolling-Game/blob/master/images/casino-credits-oilsands-rotary-music-festival-801354.png?raw=true" alt="Ethereum Dice Roll" id ="credits">
+
+                  <div class="wrapper5">
+                    <form class = "inputSection">
+                      <label class="inputBetText"><b>Input bet here</b></label>
+                      <br/>
+                      <input class="inputBet" type="number">
+                      <br/>
+                      <br/>
+                      <button type="Button" class = "buttonOne" id="rollButtonEven">Roll Even</button>
+                      <button type="Button" class ="buttonTwo" id="rollButtonOdd">Roll Odd</button>
+                    </form>
+                  </div>
+                </div>
+          </div>
+
+</div>
   </body>
-  <script src="https://github.com/DarrenGoulder/Ethereum-Dice-Rolling-Game/blob/master/Logic.js"></script>
+  <script src="Logic.js"></script>
 </html>
