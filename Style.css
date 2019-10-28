@@ -75,6 +75,7 @@ background: #f00;
   width:550px;
   top:5px;
   left:100px;
+  shadow:10px;
 }
 
 .credits {
