@@ -18,9 +18,7 @@ body {
   transition: 0.5s;
 }
 
-#particles-js
-
-{
+#particles-js {
 height: 100%;
 background: #f00;
 }
@@ -41,7 +39,7 @@ background: #f00;
   float: left;
   position:absolute;
   opacity: 0.9;
-  top:170px;
+  top:130px;
   left:50px;
   margin: 0 auto;
   width: 1100px;
@@ -61,21 +59,34 @@ background: #f00;
 
 .wrapper4 {
 
-  float:left;
+  padding:2em;
+  background-color: white;
+  border:#ccc 2px solid;
+  position:absolute;
+  opacity: 0.8;
+  top:700px;
+  left:110px;
+  margin: 0 auto;
+  width: 870px;
+  display: inline-block;
+
+
 }
 
 .wrapper5 {
-  padding:2em;
+  padding:1em;
   float:right;
   right: 30px;
+    display: inline-block;
 
 }
 
 .ethLogo {
-  width:550px;
+  width:500px;
   top:5px;
   left:100px;
   shadow:10px;
+  object-fit:contain;
 }
 
 .credits {
@@ -86,6 +97,11 @@ background: #f00;
 
 .Dice {
   width: 500px;
+}
+
+.inputSection {
+  top: 0px;
+
 }
 
 .inputBet {
@@ -107,6 +123,13 @@ background: #f00;
    text-shadow: 2px 2px 4px #000000;
 }
 
+.balance {
+  top:0px;
+  text-align: center;
+  font-size: 2em;
+   text-shadow: 2px 2px 4px #000000;
+}
+
 .buttonOne{
   font-size: 29px;
   background-color: #4CAF50;
@@ -123,6 +146,5 @@ background: #f00;
 }
 
 .buttonTwo:hover {
-
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
