@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ethereum Coin Flip</title>
+  <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+
+  <div id="particles-js">
+
+    <div class="wrapper1">
+      <div class="navbar">
+        <span class="open-slide">
+          <a href="#" onclick="openSlideMenu()">
+            <svg width="40" height="30">
+              <path d="M0,5 40,5" stroke="#fff" stroke-width="5" />
+              <path d="M0,15 40,15" stroke="#fff" stroke-width="5" />
+              <path d="M0,25 40,25" stroke="#fff" stroke-width="5" />
+            </svg>
+          </a>
+        </span>
+      </div>
+
+      <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <div class="menuTwo">
+          <input class="radio" type="radio" name="group1" checked="checked" id="radio-1">
+          <label class="radioText" for="radio-1"><span>Test Enviroment</span></label>
+          <br><br>
+          <input class="radio" type="radio" name="group1" id="radio-2">
+          <label class="radioText" for="radio-2"> <span>Blockchain Enviroment</span></label>
+          <br><br><br>
+          <p1 class="menuText" id="extraMenuText1">Please note: Metamask must be installed & an Ethereum address provided to use Blockchain testnet version.</p1>
+          <br><br>
+          <p1 class="addressText" id="extraMenuText2">Input Ethereum address here:</p1>
+          <br>
+          <input id="inputAddress" class="inputAddress" placeholder="Input address here" type="text">
+          <br><br><br>
+          <li><a href="#" class="portfolioLink">Darren Goulder Portfolio</a></li>
+        </div>
+      </div>
+
+    <h1 class="title">Ethereum Coin Flip Challenge</h1>
+
+  </div>
+
+  <div class="wrapper2">
+    <div class='container'>
+
+       <div id="coin" class=''>
+
+         <div id="heads" class="heads"></div>
+
+         <div id="tails" class="tails"></div>
+
+  </div>
+
+</div>
+</div>
+
+
+
+  <div class="wrapper3">
+
+
+<div>
+    <h1 id="resultJS" class="result" >Are you feeling lucky? Enter bet details...</h1>
+</div>
+    <div class="imageWrapper">
+      <img id="ethLg" class="ethLogo" src="https://github.com/DarrenGoulder/Ethereum-Dice-Rolling-Game/blob/master/images/ethereum-growing-exponentially-in-china-consensys-media-738504.png?raw=true" alt="Ethereum Dice Roll" id="ethLogo">-->
+    </div>
+
+  </div>
+
+  <div class="wrapper4">
+
+  <div class= "buttonWrapper">
+    <div class="buttonContainerHeads">
+
+      <img src="https://github.com/DarrenGoulder/Ethereum-Dice-Rolling-Game/blob/master/images/HeadsButton.png?raw=true" class = "headsButton" id="heads" alt="Heads" onclick="headsFunction()" />
+
+    </div>
+
+    <div class="buttonContainerTails">
+
+
+      <img src="https://github.com/DarrenGoulder/Ethereum-Dice-Rolling-Game/blob/master/images/TailsButton.png?raw=true" class = "tailsButton" id="tails" alt="Tails" onclick="tailsFunction()" />
+    </div>
+  </div>
+      <p6 id="uB" class="balance"></p6>
+      <div class="inputSection">
+        <br />
+        <input id="inputBet" class="inputBet" placeholder="Input bet here" type="number" required>
+        <br />
+        <br />
+      </div>
+
+  </div>
+</div>
+  <script src="logic.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('particles.json loaded...');
+    });
+  </script>
+
+</body>
+
+</html>

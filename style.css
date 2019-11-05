@@ -1,0 +1,449 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.title {
+  position:absolute;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 3.5em;
+  left: 8%;
+  transform: translate(-50, -50%);
+  margin: 0;
+  padding: 0;
+  top: 13%;
+  font-fmaily: sans-serif;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+#particles-js {
+height: 100%;
+background: #f00;
+width: 100%;
+}
+
+.wrapper1 {
+  opacity:100;
+  padding:1em;
+  position:absolute;
+  top:0px;
+  left:1px;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.wrapper2 {
+  opacity:8;
+  padding:2em;
+  float: left;
+  position:absolute;
+  opacity: 0.9;
+  top:80px;
+  left:30px;
+  margin: 0 auto;
+  width: 500px;
+  text-align: centre;
+}
+
+.wrapper3 {
+  padding:2em;
+  /*background-color: white;
+  border:#ccc 2px solid;
+  position:fixed;
+  opacity: 0.8;*/
+  position:absolute;
+  top: 50px;
+  left: 650px;
+
+  width: 500px;
+  height: 550px;
+  /*max-height: 100%; */
+  float: right;
+}
+
+.imageWrapper {
+  height: 400px;
+  width: 500px;
+
+}
+
+.wrapper4 {
+  max-width:100%;
+  max-height:100%
+  display:inline-block;
+  padding:2em;
+  background-color: white;
+  border:#ccc 2px solid;
+  position:absolute;
+  opacity: 0.8;
+  top:700px;
+  left:30px;
+  margin: 0 auto;
+  width: 700px;
+  display: inline-block;
+  float: right;
+  height: 150px;
+  border-radius: 54px;
+  -webkit-border-radius: 54px;
+  -moz-border-radius: 54px;
+}
+
+
+
+.ethLogo {
+  width:100%;
+  top:5px;
+  left:200px;
+  shadow:10px;
+  max-width:100%;
+  max-height:100%;
+
+  float: right;
+  -webkit-filter: drop-shadow(0 0 50px white);
+}
+
+.credits {
+  width:250px;
+  display: block;
+  position; absolute;
+  top:5px;
+  float: right;
+  -webkit-filter: drop-shadow(0 0 50px white);
+  max-width:100%;
+  max-height:100%;
+}
+
+.Dice {
+  width: 500px;
+  -webkit-filter: drop-shadow(0 0 50px white);
+  text-align:center;
+}
+
+.inputSection {
+  top: 0px;
+}
+
+.inputBet {
+    input[type=text]:focus
+    background-color: #8842d5;
+    font-size: 25px;
+    left: 10px;
+}
+.inputBetText {
+  font-size: 1.5em;
+}
+
+.result {
+  top:1px;
+  font-size: 4em;
+  color:#ccc;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.balance {
+  top:0px;
+  right:30px;
+  font-size: 2em;
+   text-shadow: 2px 2px 4px #000000;
+}
+
+.buttonOne{
+  font-size: 29px;
+  background-color: #4CAF50;
+}
+
+.buttonOne:hover {
+
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.buttonTwo{
+  font-size: 29px;
+  background-color: #008CBA;
+}
+
+.buttonTwo:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.navbar{
+  background-color:red;
+  overflow:hidden;
+  height:63px;
+  opacity:100;
+}
+
+.navbar a{
+  float:left;
+  display:block;
+  color:#f2f2f2;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+  font-size:30px;
+  opacity:100;
+}
+
+.navbar ul{
+  margin:8px 0 0 0;
+  list-style:none;
+}
+
+.navbar a:hover{
+  background-color:#ddd;
+  color:#000;
+}
+
+.side-nav{
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:1;
+  top:0;
+  left:0;
+  background-color:#111;
+  opacity:0.9;
+  overflow-x:hidden;
+  padding-top:60px;
+  transition:0.5s;
+  color: white;
+}
+
+.side-nav a{
+  text-decoration:none;
+  font-size:18px;
+  color:#ccc;
+  transition:0.3s;
+}
+
+.side-nav a:hover{
+  color:#fff;
+}
+
+.side-nav .btn-close{
+  position:absolute;
+  top:0;
+  right:22px;
+  font-size:36px;
+  margin-left:50px;
+}
+
+.radioText{
+  left:10px;
+  font-size:20px;
+}
+
+.inputAddress {
+  color: black;
+  font-size:20px;
+}
+
+.addressText {
+  left:4px;
+  color: white;
+  font-size:18px;
+}
+
+.menuText {
+  font-size:19px;
+  left:10px;
+}
+
+.menuTwo {
+  padding:1em;
+  position:absolute;
+  top:60px;
+  left:1px;
+  margin: 0 auto;
+}
+
+.portfolioLink {
+  position:absolute
+  bottom: 0px;
+}
+
+.wrapper2 {
+  display: grid;
+  grid=template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "overlap";
+}
+
+#main{
+  transition:margin-left 0.5s;
+  padding:20px;
+  overflow:hidden;
+  width:100%;
+}
+
+@media(max-width:568px){
+  .navbar-nav{display:none}
+}
+
+@media(min-width:568px){
+  /*.open-slide{display:none}*/
+}
+
+div.container {
+
+  margin: auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+}
+
+
+#coin {
+
+  position: relative;
+
+  width: 32rem;
+
+  height: 32rem;
+
+  margin: 2rem 0rem;
+
+  transform-style: preserve-3d;
+
+}
+
+#coin div {
+
+  width: 100%;
+
+  height: 100%;
+
+  /*border: 2px solid black;*/
+
+  border-radius: 50%;
+
+  backface-visibility: hidden;
+
+  background-size: contain;
+
+  position: absolute;
+
+}
+
+.heads {
+    /*background-image: url("https://en.numista.com/catalogue/photos/inde/2311-original.jpg");*/
+    background-image: url("https://raw.githubusercontent.com/DarrenGoulder/Ethereum-Dice-Rolling-Game/master/images/Coin1.png?_sm_au_=iVVW127rnnkSQN5HW3BLHK30LkJj0");
+}
+
+.animate-heads {
+  animation: flipHeads 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flipHeads {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(1800deg);
+  }
+}
+
+.tails {
+    /*background-image: url("https://en.numista.com/catalogue/photos/inde/3165-original.jpg");
+  transform: rotateY(-180deg);*/
+  background-image: url("https://raw.githubusercontent.com/DarrenGoulder/Ethereum-Dice-Rolling-Game/master/images/Coin2.png?_sm_au_=iVVW127rnnkSQN5HW3BLHK30LkJj0");
+transform: rotateY(-180deg);
+}
+
+.animate-tails {
+  animation: flipTails 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flipTails {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(1620deg);
+  }
+}
+
+/* Button Heads
+
+/* Container needed to position the button. Adjust the width as needed */
+.buttonContainerHeads {
+  float:left;
+
+  width: 50%;
+
+}
+
+/* Make the image responsive */
+.buttonContainerHeads img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.buttonContainerHeads .btn {
+
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buttonContainerHeads .btn:hover {
+  background-color: black;
+}
+  /* Button Tails
+
+  /* Container needed to position the button. Adjust the width as needed */
+
+  .buttonContainerTails {
+
+    float:right;
+
+    width: 50%;
+
+  }
+
+  /* Make the image responsive */
+  .buttonContainerTails img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Style the button and place it in the middle of the container/image */
+  .buttonContainerTails .btn {
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .buttonContainerTails .btn:hover {
+    background-color: black;
+}
+
+.buttonWrapper {
+  float:right;
+
+  width: 50%;
+}
