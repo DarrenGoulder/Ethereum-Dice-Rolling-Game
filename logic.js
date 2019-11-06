@@ -1,7 +1,4 @@
-var randomNo1, randomNo2;
-var scrDirectory1, scrDirectory2;
-var diceResult, resultText, i, ii;
-
+var resultText, i, ii;
 var userSelected;
 var myVar;
 var userBalance = 3000;
@@ -10,7 +7,6 @@ var extraMenu1 = document.getElementById("extraMenuText1");
 var extraMenu2 = document.getElementById("extraMenuText2");
 var extraMenu3 = document.getElementById("inputAddress");
 var result;
-document.getElementById("uB").innerHTML = "Your current balance is: " + userBalance;
 
 extraMenu1.style.display = "none";
 extraMenu2.style.display = "none";
@@ -18,6 +14,8 @@ extraMenu3.style.display = "none";
 
 var radio1 = document.getElementById("radio-1")
 var radio2 = document.getElementById("radio-2")
+
+document.getElementById("uB").innerHTML = "Your current balance is: " + userBalance +" WEI.";
 
 
 //Side menu functionality
@@ -61,7 +59,7 @@ function executeBet() {
   userBet = document.getElementById("inputBet").value;
 
   if (userBet > userBalance) {
-    document.getElementById("resultJS").innerHTML = "Not enough funds, your balance is: " + userBalance;
+    document.getElementById("resultJS").innerHTML = "Not enough funds, your balance is: " + userBalance + " WEI";
     }
 
   if (userBet == null || userBet == 0) {
@@ -71,13 +69,12 @@ function executeBet() {
 
     ii = 1;
 
-    document.getElementById("resultJS").innerHTML = "Good luck, you bet " + userBet + " - " + userSelected;
+    document.getElementById("resultJS").innerHTML = "Good luck, you bet " + userBet + " WEI - "+ userSelected ;
 
-    flipCoin();
+    flipCoin(userSelected);
 
     }
 }
-
 
 //New code
 
@@ -100,40 +97,37 @@ let tailsCount = 0;
 function deferFn(callback, ms) {
 
   setTimeout(callback, ms);
-
 }
-
 
 function processResult(result) {
 
-
      if (result == 'heads' & userSelected == "HEADS") {
-       resultText = "HEADS YOU WIN " + userBet + "!!";
+       resultText = "HEADS YOU WIN " + userBet + " WEI!!";
        document.getElementById("ethLg").src = "https://github.com/DarrenGoulder/Ethereum-Dice-Rolling-Game/blob/master/images/champion-cup-sports-winner-icon-473717.png?raw=true";
        //document.getElementById("ethLg").src = "/images/champion-cup-sports-winner-icon-473717.png";
        userBalance = parseInt(userBalance) + parseInt(userBet);
      }
      else if (result == 'heads' & userSelected == "TAILS") {
-       resultText = "HEADS YOU LOOSE " + userBet + "!!";
+       resultText = "HEADS YOU LOOSE " + userBet + " WEI!!";
        document.getElementById("ethLg").src = "https://github.com/DarrenGoulder/Ethereum-Dice-Rolling-Game/blob/master/images/lisasimpson-loser-simpson-simpsons-aesthetic-tumblrfree-11634.png?raw=true";
        //document.getElementById("ethLg").src = "/images/lisasimpson-loser-simpson-simpsons-aesthetic-tumblrfree-11634.png";
        userBalance = parseInt(userBalance) - parseInt(userBet);
      }
      else if (result == 'tails' & userSelected == "TAILS") {
-       resultText = "TAILS YOU WIN " + userBet + "!!";
+       resultText = "TAILS YOU WIN " + userBet + " WEI!!";
        document.getElementById("ethLg").src = "https://github.com/DarrenGoulder/Ethereum-Dice-Rolling-Game/blob/master/images/champion-cup-sports-winner-icon-473717.png?raw=true";
        //document.getElementById("ethLg").src = "/images/champion-cup-sports-winner-icon-473717.png";
        userBalance = parseInt(userBalance) + parseInt(userBet);
      }
      else {
-       resultText = "TAILS YOU LOOSE " + userBet + "!!";
+       resultText = "TAILS YOU LOOSE " + userBet + " WEI!!";
        document.getElementById("ethLg").src = "https://github.com/DarrenGoulder/Ethereum-Dice-Rolling-Game/blob/master/images/lisasimpson-loser-simpson-simpsons-aesthetic-tumblrfree-11634.png?raw=true";
        //document.getElementById("ethLg").src = "/images/lisasimpson-loser-simpson-simpsons-aesthetic-tumblrfree-11634.png";
        userBalance = parseInt(userBalance) - parseInt(userBet);
      }
 
      document.getElementById("resultJS").innerHTML = "Result is " + resultText;
-     document.getElementById("uB").innerHTML = "Your current balance is: " + userBalance;
+     document.getElementById("uB").innerHTML = "Your current balance is: " + userBalance +" WEI.";
    }
 
 
@@ -144,6 +138,7 @@ function flipCoin() {
   const random = Math.random();
 
   const result = random < 0.5 ? 'heads' : 'tails';
+
 
 
 
