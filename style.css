@@ -44,10 +44,8 @@ width: 100%;
   opacity: 0.9;
   top:10%;
   left:0%;
-
   width: 45%;
 
-/*  text-align: centre;*/
 }
 
 .wrapper3 {
@@ -81,7 +79,6 @@ width: 100%;
   left:45%;
   margin: 0 auto;
   width: 45%;
-
   float: right;
   height: 25%;
   border-radius: 54px;
@@ -90,9 +87,7 @@ width: 100%;
 }
 
 .ethLogo {
-  /*width:100%;
-  top:5px;
-  left:200px;*/
+
   shadow:10px;
   max-width:100%;
   max-height:100%;
@@ -107,7 +102,6 @@ width: 100%;
     font-size: 1.2em;
     float: left;
     top:10%;
-
 }
 
 .result {
@@ -334,78 +328,85 @@ transform: rotateY(-180deg);
 /* Container needed to position the button. Adjust the width as needed */
 .buttonContainerHeads {
   float:left;
-
   width: 50%;
-
+  opacity: 0.8;
 }
 
 /* Make the image responsive */
 .buttonContainerHeads img {
-  width: 100%;
+  width: 90%;
   height: auto;
 
 }
 
-/* Style the button and place it in the middle of the container/image */
-.buttonContainerHeads .btn {
-
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #555;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  -webkit-filter: drop-shadow(0 0 50px white);
-}
-
-.buttonContainerHeads .btn:hover {
-  background-color: black;
-}
-  /* Button Tails
-  /* Container needed to position the button. Adjust the width as needed */
-
-  .buttonContainerTails {
+.buttonContainerTails {
 
     float:right;
-
     width: 50%;
+    opacity: 0.8;
+}
 
-  }
 
-  /* Make the image responsive */
-  .buttonContainerTails img {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Style the button and place it in the middle of the container/image */
-  .buttonContainerTails .btn {
-
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #555;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-
-  .buttonContainerTails .btn:hover {
-    background-color: black;
+.buttonContainerTails img {
+  width: 90%;
+  height: auto;
 }
 
 .buttonWrapper {
-  float:right;
 
+  float:right;
   width: 50%;
+  height: 70%;
 }
 
 .particle-js{
   width:100%;
+}
+
+.buttonContainerHeads:hover{
+  opacity: 1;
+}
+
+.buttonContainerTails:hover{
+  opacity: 1;
+}
+
+.buttonContainerHeads{
+border-radius: 70px;
+-webkit-border-radius: 70px;
+-moz-border-radius: 70px;
+}
+
+.buttonContainerTails{
+border-radius: 70px;
+-webkit-border-radius: 70px;
+-moz-border-radius: 70px;
+}
+
+.headsTailsText {
+  top:0px;
+  right:30%;
+  font-size: 1.5em;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+}
+
+.flashMe {
+  top: 0%;
+  font-size: 2em;
+  color:#ccc;
+  text-shadow: 2px 2px 4px #000000;
+  text-align:center;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.resultText {
+  padding-left: 5%;
 
 }
