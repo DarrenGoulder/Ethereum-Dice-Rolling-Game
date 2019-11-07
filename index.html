@@ -71,16 +71,17 @@
     <div class="imageWrapper">
       <img id="ethLg" class="ethLogo" src="https://github.com/DarrenGoulder/Ethereum-Dice-Rolling-Game/blob/master/images/ethereum-growing-exponentially-in-china-consensys-media-738504.png?raw=true" alt="Ethereum Dice Roll" id="ethLogo">
     </div>
-    <div>
-        <h1 id="resultJS" class="result" >Are you feeling lucky? Enter bet..</h1>
+    <div class="resultText">
+        <span id="resultJS" class="result" >Are you feeling lucky? Enter bet.. </span> <span class = "flashMe" id ="winLose"></span> <span class = 'result' id="wei" ></span>
     </div>
-
 
   </div>
 
   <div class="wrapper4">
 
   <div class= "buttonWrapper">
+
+    <p1 class="headsTailsText" >--Select Heads or Tails--</p1>
     <div class="buttonContainerHeads">
 
       <img src="https://github.com/DarrenGoulder/Ethereum-Dice-Rolling-Game/blob/master/images/HeadsButton.png?raw=true" class = "headsButton" id="heads" alt="Heads" onclick="headsFunction()" />
@@ -88,7 +89,6 @@
     </div>
 
     <div class="buttonContainerTails">
-
 
       <img src="https://github.com/DarrenGoulder/Ethereum-Dice-Rolling-Game/blob/master/images/TailsButton.png?raw=true" class = "tailsButton" id="tails" alt="Tails" onclick="tailsFunction()" />
     </div>
@@ -102,7 +102,10 @@
 
   </div>
 </div>
-  <script src="logic.js"></script>
+  <script src="coinflip.js"></script>
+  <script src="menu.js"></script>
+  <script src="blockchain.js"></script>
+
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
   <script>
